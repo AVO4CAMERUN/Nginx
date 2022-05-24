@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <title>Home AVO4CAMERUN</title>
+</head>
+
+<body class="min-h-screen">
+
+    <!-- Header -->
+    <div class="mb-[6px] flex items-center place-content-center p-2">
+        <div class="w-[300px]">
+            <img src="logo_esteso3.png" alt="Avo4Camerun Logo" draggable="false">
+        </div>
+    </div>
+    <div class="">
+        <div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
+        <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+            <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="flex flex-row items-center justify-between p-4">
+                <a href="index.html" class="inline-block ml-2 text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img src="home.png" class="float-left mr-2 mt-0.5 alt="Avo4Camerun Logo"> Back to home</a>
+                <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                </button>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="https://app.avo4camerun.kirinsecurity.com/login">Login</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="https://app.avo4camerun.kirinsecurity.com/register">Register</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="aboutavogadro.html">About Avo4Camerun</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="aboutcamerun.html">About Camerun</a>   
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="translate.html"><img src="translate.png" class="inline-block " alt="translate" draggable="false">Translate</a>
+				</nav>
+            </div>
+        </div>
+        </div>
+    </div> 
+
+    <!-- Content -->
+    <div class="bg-slate-100 w-full">
+        <div class="items-center w-[min(95%,_60rem)] mx-auto p-8 bg-slate-100">
+            <div class="ml-4 mr-4">
+                <p class="text-3xl font-bold inline-block">
+                    FAQ 
+                    <div class="ml-1.5 text-xl font-semibold inline-block">
+                        - Frequently Asked Questions
+                    </div>
+                </p>
+                <p class="text-2xl font-semibold mt-12 mb-2">
+                    What do you know about “Cameroon”?
+                </p>
+                <p class="text-base font-normal text-justify">
+                    Cameroon,  officially the Republic of Cameroon,
+                     is a country in west-central Africa. It is bordered 
+                     by Nigeria to the west and north; Chad to the northeast;
+                     the Central African Republic to the east; and Equatorial Guinea,
+                     Gabon and the Republic of the Congo to the south. Its coastline
+                     lies on the Bight of Biafra, part of the Gulf of Guinea and the
+                     Atlantic Ocean. The country is sometimes identified as West African
+                     and other times as Central African, due to its strategic position
+                     at the crossroads between West and Central Africa. Its nearly 25
+                     million people speak 250 native languages.
+                </p>
+                <p class="text-xl font-semibold mt-6 mb-2">
+                    Camerun Flag:
+                </p>
+                <p class="text-base font-normal">
+                    The colors used are the traditional Pan-African colors and the tricolor is inspired by the French flag.
+                     Established in 1975.
+                    <img src="camerun.png" class="block w-full mt-2 mb-2 w-[50%]" alt="avo4camerun">  
+                    Colors meaning:
+                    <p class="ml-2">
+                        - RED: symbolizes union and the star also indicates union.<br>
+                        - YELLOW: symbolizes the sun but also the savannah of the northern part of the country.<br>
+                        - GREEN: symbolizes the forests of the southern part<br>
+                     </p>
+                </p>
+                <p class="text-xl font-semibold mt-6 mb-2">
+                    Cameroon history:
+                </p>            
+                <p class="text-base font-normal text-justify">
+                    The territory of present Cameroon was inhabited during the Neolithic period. Portuguese sailors reached the coast in 1472. Over the following centuries, European interests regularized trade with coastal peoples and Christian missionaries pushed inland. In the early 19th century, Modibo Adama led Fulani soldiers in a jihad in the north against non-Muslim and partially Muslim peoples and founded the Adamawa Emirates. The peoples who fled the Fulani caused a great redistribution of the population.
+                    The German Empire claimed the territory as a colony in 1884 and began a constant push within. With the defeat of Germany in World War I, Cameroon became the territory of the League of Nations and was divided into French Cameroon and British Cameroon in 1919. The French carefully integrated the Cameroon economy with that of France and improved the infrastructure with investments. capital, skilled workers and continued forced labor.
+                    The British managed their territory from neighboring Nigeria. The natives complained that this made them a neglected "colony of a colony". The mandates of the League of Nations were converted into United Nations Associations in 1946 and the question of independence became an urgent issue in French Cameroon. France banned the most radical political party on July 13, 1955, the Union of Peoples of Cameroon (UPC). This led to a long guerrilla warfare. In British Cameroon, the question was whether to reunite with French Cameroon or join Nigeria.
+                    On January 1, 1960, French Cameroon gained independence from France under President Ahmadou Ahidjo, and on October 1, 1961, the old British northern Cameroon became part of Nigeria, while the former British southern Cameroon joined with his close to form the Federal Republic of Cameroon.
+                </p>
+                <p class="text-xl font-semibold mt-6 mb-2">
+                    Policy:
+                </p>            
+                <p class="text-base font-normal text-justify">
+                    Cameroon is a republic
+                    unitary of equatorial Africa whose capital is Yaoundé.
+                    The current president is Paul Biya.
+                    Cameroon became a German colony in 1884, but after the First World War the territory was divided between France and the United Kingdom.
+                    Compared to other African countries, Cameroon enjoys political and social stability.
+                </p>
+                <p class="text-xl font-semibold mt-6 mb-2">
+                    School:
+                </p>
+                <p class="text-base font-normal text-justify">
+                    Compulsory school: compulsory education lasts 10/11 years (from 6 to 16/17 years) and are divided into:<br>
+                     <p class="ml-2">
+                        - Kindergarten <br>
+                        - Primary School (lasts 7 years) <br>
+                        - Secondary School (lasts 5 years) <br>
+                        - University <br>
+                     </p>
+                     Rating System: Grades range from 0 to 20. <br>
+                </p>
+                <p class="text-xl font-semibold mt-6 mb-2">
+                    Infrastructure technologies:
+                </p>
+                <p class="text-base font-normal text-justify">
+                    Cameroon has one of the lowest internet usage rates in the
+                    continent of Africa and, despite a penetration rate of
+                    Constantly growing internet (which has experienced average growth
+                    of 14% per year between 2007 and 2011) remains one of the least countries
+                    connected to the world, with only 6% of its population online in the
+                    2013: Cameroon has three international submarine cables which
+                    land on its territory (SAT-3, WACS, ACE), but only one of
+                    these cables (SAT-3) were in use as of May 2014. With only one cable
+                    submarine in service, the international bandwidth in
+                    Cameroon remains low at 340 gigabytes: a figure that is a lot
+                    behind some of its West African neighbors
+                    2017 IXP project was founded with the aim of maintaining the
+                    local Internet communication. Aims to build capacity
+                    technique of the beneficiary country in the management of the exchange point
+                    Internet and to provide, where necessary, the necessary equipment for
+                    the establishment of the Internet exchange point. There were 7.87 million
+                    Internet users in Cameroon in January 2020. The number of users
+                    Internet in Cameroon increased by 570,000 (+ 7.8%) between 2019 and
+                    2020. Internet penetration in Cameroon was 30% a
+                    January 2020.
+                </p>
+            </div>  
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="w-full bg-white">
+        <div class="mb-[6px] flex items-center place-content-center p-2">
+            <h1>
+                Powered by
+            </h1>
+            <div class="w-[55px]">
+                <img src="avo.png" alt="Avo4Camerun Logo" draggable="false">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>

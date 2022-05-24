@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({
+					pageLanguage: 'en',
+					layout: google.translate.TranslateElement.InlineLayout.horizontal
+				},
+				'google_translate_element');
+		}
+	</script>
+	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+	cb=googleTranslateElementInit"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <title>Home AVO4CAMERUN</title>
+
+</head>
+
+<body class="min-h-screen">
+    <!-- Header -->
+    <div class="mb-[6px] flex items-center place-content-center p-2">
+        <div class="w-[300px]">
+            <img src="logo_esteso3.png" alt="Avo4Camerun Logo" draggable="false">
+        </div>
+    </div>
+    <div class="">
+        <div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
+            <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+                <div x-data="{ open: true }"
+                    class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+                    <div class="flex flex-row items-center justify-between p-4">
+                        <a href="index.html"
+                            class="inline-block ml-2 text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img
+                                src="home.png" class="float-left mr-2 mt-0.5 alt=" Avo4Camerun Logo">Home</a>
+                        <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
+                            @click="open = !open">
+                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                                <path x-show="!open" fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                                <path x-show="open" fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav :class="{'flex': open, 'hidden': !open}"
+                        class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="https://app.avo4camerun.kirinsecurity.com/login">Login</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="https://app.avo4camerun.kirinsecurity.com/register">Register</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="aboutavogadro.html">About Avo4Camerun</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="aboutcamerun.html">About Camerun</a>
+						<a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="translate.html"><img src="translate.png" class="inline-block " alt="translate" draggable="false">Translate</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="bg-slate-100 w-full">
+        <div class="items-center w-[min(95%,_60rem)] mx-auto p-8 bg-slate-100">
+            <div id="carouselExampleCaptions" class="carousel slide relative outline outline-[1px] outline-gray-300"
+                data-bs-ride="carousel">
+                <div
+                    class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 brightness-[0.75]">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner relative w-full overflow-hidden">
+                    <div class="carousel-item active relative float-left w-full">
+                        <a class="" href="https://fr.sermig.org/"><img src="sermig.jpg" class="block w-full"
+                                alt="sermig"></a>
+                        <div class="carousel-caption hidden md:block absolute text-center">
+                            <h5 class="text-xl">Sermig</h5>
+                            <p>Servizio Missionario Giovani</p>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item relative float-left w-full">
+                        <a class="" href="https://www.itisavogadro.org/"><img src="scuola.jpg" class="block w-full"
+                                alt="avogadro"></a>
+                        <div class="carousel-caption hidden md:block absolute text-center">
+                            <h5 class="text-xl">Avogadro</h5>
+                            <p>Best School in Piedmont</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative float-left w-full">
+                        <a class="" href="https://app.avo4camerun.kirinsecurity.com/search"><img src="webapp.png" class="block w-full" alt="avo4camerun"></a>
+                        <div class="carousel-caption hidden md:block absolute text-center text-black">
+                            <h5 class="text-xl text-black">Free Web Platform</h5>
+                            <p>Register or Login to enter the application</p>
+                            <a class="" href="https://app.avo4camerun.kirinsecurity.com/search"><button type="button"
+                                    class="mt-6 text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-100 font-medium rounded-lg text-sm px-4 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
+                                    started</button></a>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class=" carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span
+                        class="carousel-control-prev-icon inline-block bg-no-repeat text-white bg-black/25 rounded-full"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                    type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon inline-block bg-no-repeat bg-black/25 rounded-full"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="w-full bg-white dark:bg-cyan">
+        <div class="mb-[6px] flex items-center place-content-center p-2">
+            <h1>
+                Powered by
+            </h1>
+            <div class="w-[55px] mr-4">
+                <img src="avo.png" alt="Avo" draggable="false">
+            </div>
+            <h1>
+                &
+            </h1>
+            <h1 class="ml-4">
+                Sponsored by
+            </h1>
+            <div class="w-[55px]">
+                <img src="sermig.png" alt="Sermig" draggable="false">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+
+
+</html>
